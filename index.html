@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <section class="personal-information">
+        <label id="name-label"
+          >Name
+          <input placeholder="Enter your name" id="name" type="text" required />
+        </label>
+        <label id="email-label"
+          >Email
+          <input
+            placeholder="Enter your Email"
+            id="email"
+            type="email"
+            required
+          />
+        </label>
+        <label id="number-label"
+          >Age (optional)
+          <input
+            placeholder="Age"
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+          />
+        </label>
+      </section>
+      <label>Which option best describes your current role?</label>
+      <section class="current-role">
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Leaner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </section>
+      <label>Would you recommend freeCodeCamp to a friend? </label>
+      <section class="recommend-fcc">
+        <label for="Definitely"
+          ><input
+            class="inline"
+            id="definitely"
+            type="radio"
+            name="rol-type"
+            value="definitely"
+            checked="checked"
+          />
+          Definitely</label
+        >
+        <label for="Maybe"
+          ><input
+            class="inline"
+            id="maybe"
+            type="radio"
+            name="rol-type"
+            value="maybe"
+          />
+          Maybe</label
+        >
+        <label for="Not-sure"
+          ><input
+            class="inline"
+            id="not-sure"
+            type="radio"
+            name="rol-type"
+            value="not-sure"
+          />
+          Not Sure</label
+        >
+      </section>
+      <label> What is your favorite feature of freeCodeCamp?</label>
+      <section class="fav-feature">
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Oper Source</option>
+        </select>
+      </section>
+      <label
+        >What would you like to see improved?
+        <a>(Check all that apply)</a></label
+      >
+      <section class="improve">
+        <label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-front"
+          />Front-end Projects</label
+        >
+        <label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-back"
+          />Back-end Projects</label
+        >
+        <label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-data"
+          />Data Visualization</label
+        >
+        <label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-source"
+          />Open Source Community</label
+        ><label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-gitter"
+          />Gitter help rooms</label
+        ><label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-videos"
+          />Videos</label
+        ><label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-meetups"
+          />City Meetups</label
+        ><label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-wiki"
+          />Wiki</label
+        ><label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-forum"
+          />Forum</label
+        ><label>
+          <input
+            class="inline"
+            id="to-improve"
+            type="checkbox"
+            value="check-courses"
+          />Additional Courses
+        </label>
+      </section>
+      <label>Any comments or suggestions? </label>
+      <section class="suggestion">
+        <textarea placeholder="Enter your comment here..."></textarea>
+        <input id="submit" type="submit" />
+      </section>
+    </form>
+  </body>
+</html>
