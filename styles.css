@@ -73,11 +73,8 @@ select {
 }
 
 .inline {
-  width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
-}
-input.inline {
   width: 20px;
   height: 20px;
 }
@@ -85,6 +82,10 @@ input,
 select {
   text-indent: 5px;
 }
+select {
+  width: 101%;
+}
+
 textarea {
   padding-top: 0.5rem;
   text-indent: 5px;
@@ -93,8 +94,8 @@ textarea {
 }
 input[type="submit"] {
   display: block;
-  width: 100%;
-  margin: 25px 0 0 0;
+  width: 101%;
+  margin: 25px 0 0 0px;
   min-height: 2em;
   font-size: 1.1rem;
   background-color: rgb(82, 194, 82);
